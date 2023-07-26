@@ -12,6 +12,7 @@ const Navbar = async () => {
                 <Icons.logo className='w-8 h-8 sm:w-6 sm:h-6'/>
                 <p className="hidden text-zinc-700 text-sm font-medium md:block">Breadit</p>
             </Link>
+            {/* searchbar */}
             {/* sign in */}
             <Link href={'/sign-in'} className={buttonVariants({class:'px-4 py-1 text-[12px] h-fit'})}>Sign in</Link>
         </div>
