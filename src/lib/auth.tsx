@@ -1,9 +1,9 @@
 import { NextAuthOptions } from "next-auth";
 import GoogleProvider from 'next-auth/providers/google'
-import { CredentialsProvider } from "next-auth/providers";
 import {PrismaAdapter} from '@next-auth/prisma-adapter';
 import {db} from './db';
 import {nanoid} from 'nanoid';
+import { getServerSession } from "next-auth";
 import "server-only";
 
 const options : NextAuthOptions = {
@@ -69,3 +69,5 @@ const options : NextAuthOptions = {
 };
 
 export default options;
+
+// export const getAuthSession = getServerSession(options);

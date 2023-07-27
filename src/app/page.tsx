@@ -1,8 +1,19 @@
+// import { getAuthSession } from '@/lib/auth'
 import React from 'react'
 
-const Home = () => {
+interface Sess {
+  name: string
+}
+
+const Home = async () => {
+  // const session = await getAuthSession();
+  const session : Sess = {
+    name : 'ashik'
+  };
   return (
-    <div>Home</div>
+    <div>
+      <h1 className="text-6xl font-extralight">Hello, {session?.name}</h1>
+    </div>
   )
 }
 
